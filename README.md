@@ -1,5 +1,4 @@
 # OG.FLUSH
-<br>
 
 ## Description
 This tool automatically generates a sewer system based on open-source geodata inputs, ideally the open-access source OpenStreetMaps. The generated outputs are then used to generate a hydrodynamic sewer system model like the Storm Water Management Model (SWMM).
