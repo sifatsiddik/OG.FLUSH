@@ -20,7 +20,7 @@ The following inputs are necessary for this plugin.
 | Buildings | Required | ESRI Shapefile | OSM |
 | Streets | Required | ESRI Shapefile | OSM |
 | Elevation | Required | Raster | Various (e.g. SRTM) |
-| Population density | Optional | ESRI Shapefile | Various OSM |
+| Population density | Optional | ESRI Shapefile | Various (e.g. OSM) |
 
 \
 Please note that this is a work in progress for all of its components, including but not limited to: the name, the icons, the tool itself, the graphical user interface, etc. 
