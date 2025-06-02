@@ -2,7 +2,7 @@
 <br>
 
 ## Description
-This tool automatically generates a sewer system based on open-source geodata inputs, ideally the open-access source OpenStreetMaps (OpenStreetMap contributors, 2017) https://planet.openstreetmap.org/. The generated outputs are then used to generate a hydrodynamic sewer system model like the Storm Water Management Model SWMM (Rossman, 2015) https://www.epa.gov/water-research/storm-water-management-model-swmm.
+This tool automatically generates a sewer system based on open-source geodata inputs, ideally the open-access source OpenStreetMaps. The generated outputs are then used to generate a hydrodynamic sewer system model like the Storm Water Management Model or SWMM.
 
 The conceptual details and methodology can be found at https://www.mdpi.com/2073-4441/15/1/46.
 
@@ -51,11 +51,13 @@ Please note that this is a work in progress for all of its components, including
 <br>
 
 ## Authors/Contact
-Diego.Novoa_Vazquez@tu-dresden.de\
-Julian_David.Reyes_Silva@tu-dresden.de\
+Diego.Novoa_Vazquez@tu-dresden.de  
+Julian_David.Reyes_Silva@tu-dresden.de  
 Md_Sifat.Siddik@mailbox.tu-dresden.de
 
 <br>
 
-## Citation (APA):
-Reyes-Silva, J. D., Novoa, D., Helm, B., & Krebs, P. (2023). An Evaluation Framework for Urban Pluvial Flooding Based on Open-Access Data. Water, 15(1), 46. https://doi.org/10.3390/w15010046 
+## Important Links:
+**Article:** Reyes-Silva, J. D., Novoa, D., Helm, B., & Krebs, P. (2023). An Evaluation Framework for Urban Pluvial Flooding Based on Open-Access Data. Water, 15(1), 46. https://doi.org/10.3390/w15010046  
+**OpenStreetMaps:** https://planet.openstreetmap.org  
+**SWMM:** https://www.epa.gov/water-research/storm-water-management-model-swmm
