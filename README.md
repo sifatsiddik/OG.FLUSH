@@ -2,7 +2,7 @@
 <br>
 
 ## Description
-This tool automatically generates a sewer system based on open-source geodata inputs, ideally the open-access source OpenStreetMaps. The generated outputs are then used to generate a hydrodynamic sewer system model like the Storm Water Management Model or SWMM.
+This tool automatically generates a sewer system based on open-source geodata inputs, ideally the open-access source OpenStreetMaps. The generated outputs are then used to generate a hydrodynamic sewer system model like the Storm Water Management Model (SWMM).
 
 The conceptual details and methodology can be found at https://www.mdpi.com/2073-4441/15/1/46.
 
@@ -32,8 +32,8 @@ Please note that this is a work in progress for all of its components, including
   b.	Select the ZIP file and click ok.  
 3.	Once the plugin is installed, click on the icon* on the toolbar.  
     **It currently looks like a blue network. One day, we hope to hire a professional designer.*  
-4.	If you don't see the plugin in the intergace or on the installed list, try toggling it on and off in the Plugin Manager or restart QGIS.
-5.	Select the shapefiles needed from the dropdown menu. If they are loaded in QGIS they can appear in their corresponding fields, otherwise, you can browse for them with the **…** button.  
+4.	If you don't see the plugin in the interface or on the installed list, try toggling it on and off in the Plugin Manager or restarting QGIS.
+5.	Select the shapefiles needed from the dropdown menu. If they are loaded in QGIS, they can appear in their corresponding fields, otherwise, you can browse for them with the **…** button.  
 6.	Select the design parameters according to local regulations. There is more information for them in the pop-up messages if you hover your mouse above the fields.  
 7.	If you want to design a combined system, click on the checkbox and input the necessary data.  
 8.	If you want to add meshness, as in additional pipes in the network for many reasons (e.g. having more storage), put how much in percentage of the ones skipped during the main design.  
@@ -46,7 +46,7 @@ Please note that this is a work in progress for all of its components, including
 <br>
 
 ## Limitations
-1.	For consistency and trouble-free run, please ensure that all the inputs are in WGS84 UTM coordinate system.
+1.	For consistency and a trouble-free run, please ensure that all the inputs are in the WGS84 UTM coordinate system.
 
 <br>
 
