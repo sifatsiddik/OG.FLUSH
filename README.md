@@ -44,7 +44,7 @@ Please note that this is a work in progress for all of its components, including
 
 <br>
 
-## Limitations
+## Considerations and Limitations
 1.	For consistency and a trouble-free run, please ensure that all the inputs are in the WGS84 UTM coordinate system.
 
 <br>
