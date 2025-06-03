@@ -1,7 +1,7 @@
-# OG.FLUSH
+# **OG.FLUSH**
 
 ## Description
-This tool automatically generates a sewer system based on open-source geodata inputs, ideally the open-access source OpenStreetMaps. The generated outputs are then used to generate a hydrodynamic sewer system model like the Storm Water Management Model (SWMM).
+**OG.FLUSH** (**O**pen-access **G**IS-based **F**low **L**ayout for **U**rban **S**ewer **H**ydrodynamics) is a QGIS plugin. It's developed for automatically generating a sewer system based on open-source geodata inputs, ideally the open-access source OpenStreetMaps. The outputs are then used to generate a hydrodynamic sewer system model like the Storm Water Management Model (SWMM).
 
 The conceptual details and methodology can be found at https://www.mdpi.com/2073-4441/15/1/46.
 
