@@ -46,6 +46,7 @@ Please note that this is a work in progress for all of its components, including
 
 ## Considerations and Limitations
 1.	For consistency and a trouble-free run, please ensure that all the inputs are in the WGS84 UTM coordinate system.
+2.	Please ensure that the extent of Buildings, Streets, Elevation and Population Density data cover whole Study Area. One way to achieve that is to get a buffer of Study Area and extract the data using the buffered area.
 
 <br>
 
