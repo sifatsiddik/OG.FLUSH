@@ -7,24 +7,36 @@ The conceptual details and methodology can be found at https://www.mdpi.com/2073
 
 This Tool was developed under the scope of the KlimaKonform project. Further information can be found here at https://klimakonform.uw.tu-dresden.de/
 
+⚠️ This plugin may be considered a work in progress.
+
+
 <br>
 
-## Instructions
+## Inputs
 The following inputs are necessary for this plugin.
 
 
-| Parameter | Requirment | Type | Source |
-| --- | --- | --- | --- |
-| Study area | Required | ESRI Shapefile | User-defined |
-| Outlet | Required | ESRI Shapefile | User-defined |
-| Buildings | Required | ESRI Shapefile | OSM |
-| Streets | Required | ESRI Shapefile | OSM |
-| Elevation | Required | Raster | Various (e.g. SRTM) |
-| Population density | Optional | ESRI Shapefile | Various (e.g. OSM) |
+| Parameter | Requirment | Type | Description | Source |
+| --- | --- | --- | --- | --- |
+| Study area | Required | ESRI Polygon Shapefile | Boundary defining the area of interest | User-defined |
+| Outlet | Required | ESRI Point Shapefile | Single endpoint for the network (e.g., treatment plant or discharge location) | User-defined |
+| Buildings | Required | ESRI Polygon Shapefile | Building footprints within the study area | Various (e.g. OSM, Google Open Buildings) |
+| Streets | Required | ESRI LineString Shapefile | OSM-based road network guiding the sewer design alignment | OSM |
+| Digital elevation model | Required | Raster | Elevation data representing terrain heights | Various (e.g. city portals) |
+| Population density | Optional | ESRI Point Shapefile | Population distribution for combined sewer design | Various (e.g. OSM) |
 
-\
-Please note that this is a work in progress for all of its components, including but not limited to: the name, the icons, the tool itself, the graphical user interface, etc. 
 
+<br>
+
+## Preparation
+The following points should be considered to prepare the input files.
+1.	Please ensure that all the inputs are in the WGS84 UTM coordinate system.
+2.	Please ensure that the extent of Buildings, Streets, Elevation and Population Density data covers the whole Study Area. One way to achieve that is to get a buffer of the Study Area and extract the data using the buffered area.
+
+
+<br>
+
+## Instructions
 1.	Download the plugin ZIP file.  
 2.	Install the plugin in QGIS.  
   a.	**Go to Plugins** → **Manage and Install Plugins** → **Install from ZIP**.  
@@ -41,12 +53,15 @@ Please note that this is a work in progress for all of its components, including
 11.	If QGIS freezes for a couple of minutes, don't worry. Just let it work. Meanwhile, the progress bar should keep you company.  
 
 
-
 <br>
 
-## Considerations and Limitations
-1.	For consistency and a trouble-free run, please ensure that all the inputs are in the WGS84 UTM coordinate system.
-2.	Please ensure that the extent of Buildings, Streets, Elevation and Population Density data cover whole Study Area. One way to achieve that is to get a buffer of Study Area and extract the data using the buffered area.
+## Assumptions and Limitations
+1.	All sewers are designed along the streets (technically, under).
+2.	The rational method is used for sewer pipe dimensions.
+3.	Lower-resolution DEM (> 10 m) might result in a slightly lesser designed network.
+4.	Only OSM is supported for Streets (**NOT** Buildings or other inputs). Other open-access street or road sources can be available in a later version.
+5.	For now, this plugin works well with UTM coordinate systems, particularly the global WGS84 UTM. While it might work for local UTM coordinate systems, outlet distance validation might raise issues. This problem and support for the Geographic system are planned for a later version.
+
 
 <br>
 
@@ -55,9 +70,11 @@ Diego.Novoa_Vazquez@tu-dresden.de
 Julian_David.Reyes_Silva@tu-dresden.de  
 Md_Sifat.Siddik@mailbox.tu-dresden.de
 
+
 <br>
 
 ## Important Links:
 **Article:** Reyes-Silva, J. D., Novoa, D., Helm, B., & Krebs, P. (2023). An Evaluation Framework for Urban Pluvial Flooding Based on Open-Access Data. Water, 15(1), 46. https://doi.org/10.3390/w15010046  
+**Sewer network meshness:** https://doi.org/10.2166/wst.2020.070  
 **OpenStreetMaps:** https://planet.openstreetmap.org  
 **SWMM:** https://www.epa.gov/water-research/storm-water-management-model-swmm
