@@ -5,7 +5,7 @@
 
 The conceptual details and methodology can be found at https://www.mdpi.com/2073-4441/15/1/46.
 
-This Tool was developed under the scope of the KlimaKonform project. Further information can be found here at https://klimakonform.uw.tu-dresden.de/
+This Tool was developed under the scope of the KlimaKonform project. Further information can be found here at https://klimakonform.uw.tu-dresden.de.
 
 ⚠️ This plugin may be considered a work in progress.
 
