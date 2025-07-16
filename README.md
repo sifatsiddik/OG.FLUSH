@@ -32,6 +32,28 @@ The following inputs are necessary for this plugin.
 The following points should be considered to prepare the input files.
 1.	Please ensure that all the inputs are in the WGS84 UTM coordinate system.
 2.	Please ensure that the extent of Buildings, Streets, Elevation and Population Density data covers the whole Study Area. One way to achieve that is to get a buffer of the Study Area and extract the data using the buffered area.
+3.	Please ensure that all the plugin dependencies are available in QGIS. For more information, see the **External Dependencies** section.
+
+
+<br>
+
+## External Dependencies
+OG.FLUSH depends on three Python libraries for operation, namely NetworkX, NumPy and Pandas. While some of these libraries might already be included in a QGIS environment, they also might not. In the case of such unavailability, the user has to install these libraries to use the plugin. To install these, you can follow the steps given below.
+
+**Method 1**: If QGIS was installed with the official OSGeo4W installer, the OSGeo4W Shell can be used to install the required libraries.  
+1.  First, search for "OSGeo4W Shell" in your Windows Start Menu and click to open it.  
+2.  At the command prompt, type (or just copy) the following command.  
+    pip install networkx numpy pandas  
+3.  The console will download and install the missing libraries, and skip the ones already installed.  
+4.  Once done, close the shell, restart QGIS and the plugin should work.  
+
+**Method 2**: This may work for both OSGeo4W and standalone QGIS.  
+1.  In QGIS, go to **Plugins** → **Python Console**. The console should appear, usually at the bottom of the QGIS window.  
+2.  After the ">>>", type or copy the following lines one by one and press **Enter** after each line.  
+    import subprocess  
+    subprocess.check_call(['python', '-m', 'pip', 'install', 'networkx', 'numpy', 'pandas'])  
+3.  Similar to Method 1, the console will download and install the necessary libraries.  
+4.  Once done, restart QGIS and the plugin should also work.
 
 
 <br>
@@ -39,7 +61,7 @@ The following points should be considered to prepare the input files.
 ## Instructions
 1.	Download the plugin ZIP file.  
 2.	Install the plugin in QGIS.  
-  a.	**Go to Plugins** → **Manage and Install Plugins** → **Install from ZIP**.  
+  a.	Go to **Plugins** → **Manage and Install Plugins** → **Install from ZIP**.  
   b.	Select the ZIP file and click ok.  
 3.	Once the plugin is installed, click on the icon* on the toolbar.  
     **It currently looks like a blue network. One day, we hope to hire a professional designer.*  
