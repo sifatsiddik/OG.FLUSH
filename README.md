@@ -42,10 +42,14 @@ OG.FLUSH depends on three Python libraries for operation, namely NetworkX, NumPy
 
 **Method 1**: If QGIS was installed with the official OSGeo4W installer, the OSGeo4W Shell can be used to install the required libraries.  
 1.  First, search for "OSGeo4W Shell" in your Windows Start Menu and click to open it.  
-2.  At the command prompt, type (or just copy) the following command.  
-    pip install networkx numpy pandas  
-3.  The console will download and install the missing libraries, and skip the ones already installed.  
-4.  Once done, close the shell, restart QGIS and the plugin should work.  
+2.  At the command prompt, type (or just copy) the following command to check if pip is installed.  
+    python -m pip --version  
+3.  If the console shows pip as already installed, proceed to step 4. Otherwise, type the following command to install pip.
+    python -m ensurepip --upgrade  
+5.  Once pip is installed, type the following command to install the required libraries.  
+    python -m pip install networkx numpy pandas  
+6.  The console will download and install the missing libraries, and skip the ones already installed.  
+7.  Once done, close the shell, restart QGIS and the plugin should work.  
 
 **Method 2**: This may work for both OSGeo4W and standalone QGIS.  
 1.  In QGIS, go to **Plugins** → **Python Console**. The console should appear, usually at the bottom of the QGIS window.  
