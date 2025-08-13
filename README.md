@@ -91,10 +91,22 @@ OG.FLUSH depends on three Python libraries for operation, namely NetworkX, NumPy
 
 <br>
 
-## Authors/Contact
+## Authors
+Diego Novoa Vazquez  
+Julian David Reyes Silva  
+Md Sifat Siddik  
+  
+All affiliated with,  
+Urban Hydrology Research Group  
+Institute for Urban and Industrial Water Management  
+TU Dresden  
+
+
+<br>
+
+## Contact
 Diego.Novoa_Vazquez@tu-dresden.de  
-Julian_David.Reyes_Silva@tu-dresden.de  
-Md_Sifat.Siddik@mailbox.tu-dresden.de
+Md_Sifat.Siddik@mailbox.tu-dresden.de  
 
 
 <br>
