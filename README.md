@@ -30,8 +30,8 @@ The following inputs are necessary for this plugin.
 
 ## Preparation
 The following points should be considered to prepare the input files.
-1.	Please ensure that all the inputs are in the WGS84 UTM coordinate system.
-2.	Please ensure that the extent of Buildings, Streets, Elevation and Population Density data covers the whole Study Area. One way to achieve that is to get a buffer of the Study Area and extract the data using the buffered area.
+1.	Please ensure that all the inputs are in a UTM coordinate system.
+2.	Please ensure that the extent of Buildings, Streets, Elevation and Population Density data covers the whole Study Area. One way to achieve this is to get a buffer of the Study Area and extract the data using the buffered area.
 3.	Please ensure that all the plugin dependencies are available in QGIS. For more information, see the **External Dependencies** section.
 
 
