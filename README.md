@@ -105,8 +105,8 @@ TU Dresden
 <br>
 
 ## Contact
-Diego.Novoa_Vazquez@tu-dresden.de  
-Md_Sifat.Siddik@tu-dresden.de  
+diego.novoa_vazquez@tu-dresden.de  
+md_sifat.siddik@tu-dresden.de  
 
 
 <br>
