@@ -86,7 +86,7 @@ OG.FLUSH depends on three Python libraries for operation, namely NetworkX, NumPy
 2.	The rational method is used for sewer pipe dimensions.
 3.	Lower-resolution DEM (> 10 m) might result in a slightly lesser designed network.
 4.	Only OSM is supported for Streets (**NOT** Buildings or other inputs). Other open-access street or road sources can be available in a later version.
-5.	For now, this plugin works well with UTM coordinate systems, particularly the global WGS84 UTM. While it might work for local UTM coordinate systems, outlet distance validation might raise issues. This problem and support for the Geographic system are planned for a later version.
+5.	For now, this plugin works well with UTM coordinate systems. For other coordinate systems, the outlet distance validation might raise issues. Support for the Geographic system are planned for a later version.
 
 
 <br>
