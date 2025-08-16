@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/plugins/og_flush" >
+        <file>icon.png</file>
+    </qresource>
+</RCC>
